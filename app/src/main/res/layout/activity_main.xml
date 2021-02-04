@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Login"
+        android:textColor="#1C0101"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlogin">
+
+        <TextView
+            android:id="@+id/txtusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Username"
+            android:textColor="#090000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Enter name"
+            android:inputType="textPersonName"
+            android:textColorHint="#CD0E0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Password"
+            android:textColor="#0B0000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textColorHint="#EB090000" />
+
+        <Button
+            android:id="@+id/btnloginclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="30dp"
+            android:background="@color/teal_200"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:backgroundTint="#EF1616" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
